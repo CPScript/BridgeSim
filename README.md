@@ -1,3 +1,5 @@
+Used in the [NFCman Project](https://github.com/CPScript/NFCman)
+
 ![image](https://github.com/user-attachments/assets/1dffb219-3d4d-4622-be8f-add001e7f73a)
 
 ![image](https://github.com/user-attachments/assets/6cf8e8a1-df55-4509-b209-35b0cfd69eb2)
