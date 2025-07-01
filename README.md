@@ -1,6 +1,7 @@
 # BridgeSim [(Photos)](img/readme.md)
+> Built off of the NFCman controller found [here](https://github.com/CPScript/NFCman)
 
-**Android Analysis & Exploitation Framework for Security Research**
+---
 
 ![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)
