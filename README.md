@@ -1,139 +1,206 @@
-Used in the [NFCman Project](https://github.com/CPScript/NFCman)
+# BridgeSim [(Photos)](img/readme.md)
 
-![image](https://github.com/user-attachments/assets/1dffb219-3d4d-4622-be8f-add001e7f73a)
+**Android Analysis & Exploitation Framework for Security Research**
 
-![image](https://github.com/user-attachments/assets/6cf8e8a1-df55-4509-b209-35b0cfd69eb2)
+![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)
+![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)
 
-![image](https://github.com/user-attachments/assets/5fe95499-88a6-46b7-b72e-b3eb0430b69b)
+## Overview
 
-![image](https://github.com/user-attachments/assets/9f45bbb5-7082-427a-b07f-9b0d793a34dc)
+BridgeSim is a comprehensive Android device analysis and manipulation framework designed for security researchers, penetration testers, and mobile forensics specialists. This tool provides deep device introspection, security assessment, and advanced manipulation capabilities for legitimate security research and testing.
 
-UDB commands;
-> Here's a simple list of **100 ADB commands** you can use to get started!
+## IMPORTANT LEGAL DISCLAIMER
 
-### **1. General Device Information**
+**This tool is designed exclusively for authorized security research, penetration testing, and forensic analysis. Users must:**
 
-1. `adb shell getprop` — Get system properties (e.g., device model, build info).
-2. `adb shell cat /proc/cpuinfo` — Get detailed CPU info.
-3. `adb shell cat /proc/meminfo` — View memory usage.
-4. `adb shell cat /proc/version` — Get the device’s kernel version.
-5. `adb shell cat /proc/loadavg` — View system load averages.
-6. `adb shell cat /proc/uptime` — Get device uptime.
-7. `adb shell df` — View disk usage and available storage.
-8. `adb shell free` — Display memory usage statistics.
-9. `adb shell top` — Show running processes and system stats.
-10. `adb shell ps` — View processes running on the device.
-11. `adb shell dumpsys activity` — Display information about running activities.
-12. `adb shell dumpsys battery` — Get battery status and statistics.
-13. `adb shell dumpsys wifi` — Display Wi-Fi status and information.
-14. `adb shell dumpsys power` — Show power management stats.
-15. `adb shell dumpsys window` — Show active window manager status.
-16. `adb shell wm size` — Get screen resolution.
-17. `adb shell wm density` — Get screen density.
-18. `adb shell cat /sys/class/thermal/thermal_zone0/temp` — Get temperature data from thermal sensor.
-19. `adb shell cat /sys/class/power_supply/battery/capacity` — Get battery percentage.
+- **Only use on devices you own or have explicit written authorization to test**
+- **Comply with all applicable local, state, and federal laws**
+- **Respect privacy rights and terms of service**
+- **Use responsibly for legitimate security research purposes only**
 
-### **2. File and Directory Management**
+**Unauthorized access to devices or networks is illegal and prohibited. The authors accept no responsibility for misuse.**
 
-20. `adb shell ls` — List files in the current directory.
-21. `adb shell mkdir <directory>` — Create a directory.
-22. `adb shell rm <file>` — Remove a file.
-23. `adb shell rm -rf <directory>` — Remove a directory and its contents.
-24. `adb shell cp <source> <destination>` — Copy a file from source to destination.
-25. `adb shell mv <source> <destination>` — Move a file.
-26. `adb shell cat <file>` — Display the contents of a file.
-27. `adb shell chmod <permissions> <file>` — Change file permissions.
-28. `adb shell chown <owner>:<group> <file>` — Change file owner and group.
-29. `adb shell find /path -name <filename>` — Search for a file by name.
-30. `adb shell ls -l` — List files with detailed information.
-31. `adb shell touch <file>` — Create an empty file.
-32. `adb shell stat <file>` — View file statistics.
-33. `adb shell df -h` — Display human-readable disk usage.
-34. `adb shell du -sh <directory>` — Display directory size in human-readable format.
+## Key Features
 
-### **3. App and Package Management**
+### Security Analysis
+- **Comprehensive Vulnerability Scanner** - Automated security assessment with 8 different vulnerability categories
+- **Security Bypass Suite** - SELinux, signature verification, certificate pinning, and root detection bypass
+- **Privilege Escalation** - Multiple automated root exploitation techniques
+- **Memory Analysis** - Process memory dumps and analysis capabilities
 
-35. `adb shell pm list packages` — List all installed packages.
-36. `adb shell pm list packages -f` — List packages with their file paths.
-37. `adb shell pm path <package>` — Get the installation path of a package.
-38. `adb shell pm uninstall <package>` — Uninstall an app.
-39. `adb shell pm uninstall --user 0 <package>` — Uninstall app for the current user.
-40. `adb shell pm enable <package>` — Enable a disabled app.
-41. `adb shell pm disable <package>` — Disable an app.
-42. `adb shell am start -n <package>/<activity>` — Launch an app or activity.
-43. `adb shell am start -a <action>` — Start an activity with an intent action.
-44. `adb shell am force-stop <package>` — Force stop a specific app.
-45. `adb shell am broadcast -a <action>` — Send a broadcast intent.
-46. `adb shell am startservice <service>` — Start a service.
-47. `adb shell am stopservice <service>` — Stop a service.
-48. `adb shell pm clear <package>` — Clear app data (similar to factory reset for that app).
-49. `adb shell settings list system` — List system settings.
-50. `adb shell settings get <namespace> <key>` — Get a specific setting.
-51. `adb shell settings put <namespace> <key> <value>` — Set a specific setting.
+### Device Management
+- **Real-time System Monitoring** - Live performance metrics and resource usage
+- **Advanced File Manager** - Complete filesystem navigation and manipulation
+- **Process Manager** - Monitor, analyze, and control running processes
+- **Device Backup/Restore** - Complete device state management
 
-### **4. Network and Connectivity**
+### Remote Control
+- **Screen Mirroring** - Real-time screen monitoring and recording
+- **Input Simulation** - Touch, swipe, and key event automation
+- **Remote APK Execution** - Install and execute applications remotely
+- **Shell Terminal** - Interactive command-line interface with history
 
-52. `adb shell ifconfig` — Display network interface configuration.
-53. `adb shell ip addr show` — Show IP address information.
-54. `adb shell ip link show` — Show network interfaces.
-55. `adb shell ping <ip>` — Test network connectivity.
-56. `adb shell netstat` — Show network connections.
-57. `adb shell getprop net.wifi.interface` — Get Wi-Fi interface.
-58. `adb shell netcfg` — Show network interfaces and their status.
-59. `adb shell dumpsys connectivity` — Display network connection status.
-60. `adb shell service call connectivity 33` — Enable/Disable Wi-Fi.
-61. `adb shell service call connectivity 32` — Enable/Disable mobile data.
-62. `adb shell service call connectivity 1` — Enable Bluetooth.
-63. `adb shell service call bluetooth 3` — Disable Bluetooth.
+### Reverse Engineering
+- **Automated Binary Analysis** - System binary examination and analysis
+- **NFC Stack Analysis** - Specialized NFC chipset and firmware analysis
+- **Memory Mapping** - Process memory structure visualization
+- **Firmware Management** - Backup, analysis, and flashing capabilities
 
-### **5. Notifications and System Events**
+### Communications Analysis
+- **Network Traffic Monitoring** - Capture and analyze network connections
+- **SMS/Call Analysis** - Communications history and monitoring
+- **Location Services** - GPS tracking and location data analysis
+- **WiFi Analysis** - Network configuration and security assessment
 
-64. `adb shell am broadcast -a android.intent.action.MASTER_CLEAR` — Perform a factory reset.
-65. `adb shell am broadcast -a android.intent.action.SEND_NOTIFICATION` — Send a notification.
-66. `adb shell input keyevent 26` — Toggle the power button (screen on/off).
-67. `adb shell input keyevent 3` — Press the Home button.
-68. `adb shell input keyevent 4` — Press the Back button.
-69. `adb shell input keyevent 82` — Press the Menu button.
-70. `adb shell input keyevent 24` — Volume Up.
-71. `adb shell input keyevent 25` — Volume Down.
-72. `adb shell input keyevent 66` — Enter (select).
-73. `adb shell input text <text>` — Input text into an active text field.
-74. `adb shell input swipe <x1> <y1> <x2> <y2>` — Simulate a swipe gesture.
-75. `adb shell input tap <x> <y>` — Simulate a tap gesture.
-76. `adb shell am startservice -a com.android.service.NotificationService` — Start notification service.
-77. `adb shell am start -n com.android.settings/.Settings` — Open Settings app.
+### Forensics & Monitoring
+- **Advanced Keylogger** - Input monitoring with export capabilities
+- **System Logs** - Real-time log monitoring and analysis
+- **Evidence Collection** - Structured data export for forensic analysis
+- **Report Generation** - Comprehensive analysis reporting
 
-### **6. Debugging and Logs**
+## Installation
 
-78. `adb logcat` — View the system logs.
-79. `adb logcat -d` — Dump logs to the console.
-80. `adb logcat -s <tag>` — Filter logs by tag.
-81. `adb logcat -v time` — View logs with timestamp.
-82. `adb shell dmesg` — Display kernel logs.
-83. `adb logcat -c` — Clear the log buffer.
-84. `adb logcat *:E` — Show only error logs.
-85. `adb logcat -f <file>` — Write logs to a file.
+### Prerequisites
 
-### **7. Screen Capture and Recording**
+- **Python 3.7+** with required packages
+- **Android SDK Platform Tools** (ADB)
+- **Administrative privileges** (for advanced features)
+- **USB debugging enabled** on target device
 
-86. `adb shell screencap /sdcard/screenshot.png` — Capture a screenshot.
-87. `adb shell screenrecord /sdcard/video.mp4` — Record the screen (requires `Ctrl+C` to stop).
-88. `adb pull /sdcard/screenshot.png <local-path>` — Pull a screenshot from the device to your computer.
-89. `adb push <local-path> /sdcard/` — Push a file from your computer to the device.
-90. `adb shell screencap -p > screenshot.png` — Save screenshot to a file directly from ADB.
-91. `adb shell screenrecord --verbose /sdcard/recording.mp4` — Start recording screen with verbose output.
+### Required Python Packages
 
-### **8. File and Data Management**
+```bash
+pip install tkinter pillow psutil
+```
 
-92. `adb push <local-file> /sdcard/` — Push a file from the host machine to the device.
-93. `adb pull /sdcard/screenshot.png <local-path>` — Pull a file from the device to the host machine.
-94. `adb shell mount` — Show mounted filesystems.
-95. `adb shell mv <source> <destination>` — Move a file or directory.
-96. `adb shell tar -xvf <archive-file>` — Extract files from a tar archive.
-97. `adb shell tar -cvf <archive-file> <source>` — Create a tar archive of files.
+### ADB Setup
 
-### **9. Rebooting and Power Management**
+1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools)
+2. Add ADB to your system PATH
+3. Verify installation: `adb version`
 
-98. `adb reboot` — Reboot the device.
-99. `adb reboot recovery` — Reboot into recovery mode.
-100. `adb reboot bootloader` — Reboot into bootloader mode.
+### Installation Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/CPScript/BridgeSim
+cd BridgeSim
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python nfcman_.py
+```
+
+## Quick Start
+
+1. **Connect Device**
+   - Enable USB debugging on Android device
+   - Connect via USB and authorize computer
+   - Launch NFCman 
+
+2. **Device Selection**
+   - Select device from dropdown menu
+   - Click "Connect" to establish connection
+   - Verify connection status in toolbar
+
+3. **Choose Analysis Type**
+   - **System Monitor**: Real-time device monitoring
+   - **Security Manager**: Security assessment and bypass
+   - **Reverse Engineering**: Automated analysis and memory dumps
+   - **Remote Control**: Device interaction and screen mirroring
+   - **Communications**: SMS, call, and location analysis
+
+4. **Export Results**
+   - Use export functions to save analysis results
+   - Generate comprehensive reports for documentation
+
+## Usage Examples
+
+### Basic Device Analysis
+```python
+# Launch system monitor
+python nfcman_.py
+# Connect device -> System Monitor tab -> Start Monitor
+```
+
+### Security Assessment
+```python
+# Run comprehensive vulnerability scan
+# Security Manager tab -> Scan Security -> Vulnerability Scanner
+```
+
+### Memory Analysis
+```python
+# Create memory dump for analysis
+# Reverse Engineering tab -> Memory Dump -> Select process/full dump
+```
+
+### Network Monitoring
+```python
+# Capture network traffic
+# Network Monitor tab -> Start Monitor -> Capture Traffic
+```
+
+## Advanced Configuration
+
+### Custom Exploit Modules
+```python
+# Add custom exploitation techniques
+class CustomExploit(ExploitBase):
+    def execute(self):
+        # Implementation
+        pass
+```
+
+### Analysis Plugins
+```python
+# Extend analysis capabilities
+class CustomAnalyzer(AnalyzerBase):
+    def analyze(self, target):
+        # Custom analysis logic
+        pass
+```
+
+### Contribution Guidelines
+
+- Follow existing code style and structure
+- Include comprehensive tests for new features
+- Update documentation for any API changes
+- Ensure all security features include appropriate warnings
+- Test thoroughly on multiple Android versions
+
+## Security Considerations
+
+### Responsible Use
+- **Only test on authorized devices**
+- **Follow coordinated vulnerability disclosure**
+- **Respect user privacy and data protection laws**
+- **Document all testing activities for accountability**
+
+### Operational Security
+- Use in isolated testing environments
+- Monitor for unintended network traffic
+- Secure storage of extracted data and dumps
+- Regular updates for latest security patches
+
+## Acknowledgments
+
+- Android Security Research Community
+- ADB and Android SDK teams
+- Open source security tool developers
+- Responsible disclosure security researchers
+
+## Project Status
+
+- **Current Version**: 4.0  Edition
+- **Development Status**: Active
+- **Python Support**: 3.7+
+- **Android Support**: 6.0+ (API 23+)
+- **Last Updated**: 2025
+
+---
+
+**Remember: With great power comes great responsibility. Use this tool ethically and legally.**
