@@ -5,7 +5,7 @@
 
 ![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)
-![Status](https://img.shields.io/badge/status-Active%20Development%20For&20Iphones-brightgreen.svg)
+![Status](https://img.shields.io/badge/status-Active%20Development%20For%20Iphones-brightgreen.svg)
 
 ## Overview
 
