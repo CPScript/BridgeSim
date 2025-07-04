@@ -1,4 +1,4 @@
-# BridgeSim [(Photos)](img/readme.md)
+# BridgeSimple [(Photos)](img/readme.md)
 > Built off of the NFCman controller found [here](https://github.com/CPScript/NFCman)
 
 ---
