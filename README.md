@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
 ![Android](https://img.shields.io/badge/Android-6.0%2B-green.svg)
 ![iOS](https://img.shields.io/badge/iOS-12.0%2B-blue.svg)
-![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)
+![Status](https://img.shields.io/badge/status-Finished%20Development-brightgreen.svg)
 
 ## Overview
 
